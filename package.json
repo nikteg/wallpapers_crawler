@@ -1,0 +1,10 @@
+{
+  "name": "wallpapers_crawler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "crawler": "^1.2.1",
+    "request": "^2.88.2"
+  }
+}
