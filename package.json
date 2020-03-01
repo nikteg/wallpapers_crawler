@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "crawler": "^1.2.1",
-    "request": "^2.88.2"
+    "async": "^3.2.0",
+    "bent": "^7.1.0",
+    "jsdom": "^16.2.0"
   }
 }
