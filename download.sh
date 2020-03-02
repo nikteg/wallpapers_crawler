@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 
-# node index.js > links.txt
+FILE="links.txt"
+DIR="downloads"
 
-wget \
-  --tries=0 \
-  --retry-connrefused \
-  --continue \
-  --progress=bar \
-  --show-progress \
-  --random-wait \
-  --background \
-  -i links.txt
+#if [ ! -f "$FILE" ]; then
+#  node index.js > "$FILE"
+#fi
+
+mkdir -p "$DIR"
+
+cd "$DIR" && { xargs < "../$FILE" curl -v --show-error --fail-early --retry 10 --retry-connrefused -L -J -O && cd -; }
