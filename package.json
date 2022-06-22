@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "async": "^3.2.0",
+    "async": "^3.2.2",
     "bent": "^7.1.0",
     "jsdom": "^16.2.0",
     "semver": "^7.1.3"
